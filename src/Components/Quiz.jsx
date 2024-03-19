@@ -1,5 +1,5 @@
 import questions from "../questions";
-import Answer from "./Answer/answer";
+import Answer from "./Answer/Answer";
 import backgroundMusic from "../assets/yt5s.io - One Piece OST Overtaken (128 kbps).mp3";
 
 function Quiz() {
