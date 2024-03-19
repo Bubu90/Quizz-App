@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Question from "../Question";
 import Summary from "../Summary";
 import Timer from "../Timer";
@@ -21,7 +21,12 @@ export default function Answer({ questions }) {
     setQuizCompleted(false);
     setUserAnswers([]);
   };
+  const randomAnswers = useRef();
 
+  // if (!randomAnswers.current) {
+  //   randomAnswers.current = [...prevAnswers];
+  //   randomAnswers.current.sort(() => Math.random() - 0.5);
+  // }
   // Ordina le domande in base all'ID prima di eseguire il rendering
   // useEffect(() => {
   //   questions.sort((a, b) => a.id - b.id);
